@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>cart system</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+      integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="header">
+      <div class="nav">
+        <div class="logo">MATAN</div>
+        <div class="search">
+          <div class="option">
+            <select id="cars" name="gategory">
+              <option value="">All</option>
+              <option value="laptop">laptop</option>
+              <option value="headphones">headphones</option>
+              <option value="earpuds">earpuds</option>
+              <option value="iphone">iphone</option>
+              <option value="keyboard">keyboard</option>
+              <option value="samsung">samsung</option>
+            </select>
+          </div>
+          <input type="text" class="search" placeholder="search" />
+          <button class="searchbtn">search</button>
+        </div>
+        <div class="wishlist">
+          <div class="numberwish hide">3</div>
+          <i class="fa-solid fa-heart"></i>
+        </div>
+        <div class="cart">
+          <div class="cartnumber hide">10</div>
+          <div class="basket">
+            <i class="fa-solid fa-cart-shopping"></i>
+          </div>
+          <div class="line"></div>
+          <div class="money">0</div>
+        </div>
+      </div>
+      <div class="wishlistcard">
+        <div class="wishlist-order">
+          <div class="arraw"></div>
+          <div class="summary">
+            <div class="left">
+              <h3>wishlist</h3>
+            </div>
+          </div>
+
+          <div class="main-wishlist-box"></div>
+          <hr />
+        </div>
+      </div>
+      <div class="cartsystem">
+        <div class="order">
+          <div class="summary">
+            <div class="left">
+              <i class="fa-light fa-cart-shopping-fast"></i>
+              <h3>order summary</h3>
+            </div>
+            <div class="removeall hide" onclick="remoalldata()">remove all</div>
+          </div>
+
+          <div class="main-cart-box"></div>
+          <hr />
+          <div class="items hide"></div>
+          <div class="paynow hide">Pay now</div>
+        </div>
+      </div>
+      <div class="content">
+        <div class="main-box"></div>
+      </div>
+    </div>
+    <script src="products.js"></script>
+    <script src="script.js"></script>
+  </body>
+</html>
